@@ -1,0 +1,14 @@
+{
+  "type": "offer",
+  "title": "Build the first paid note offer",
+  "objective": "Design a paid note offer around locally validated robotics simulation or physical AI work, including free hooks and CTA copy.",
+  "context": "The audience is technical enough to pay for real implementation details, but the offer needs to be concrete and immediately understandable.",
+  "constraints": [
+    "Use only claims that could be supported by local validation",
+    "Make the free/paid boundary explicit",
+    "Keep the offer small enough to ship this week"
+  ],
+  "artifact_path": "monetization/build-paid-note-offer.md",
+  "model": "quality"
+}
+

@@ -1,0 +1,14 @@
+{
+  "type": "repurpose",
+  "title": "Repurpose one simulation result into distribution assets",
+  "objective": "Turn one local simulation result into multiple reusable outputs for X, note, GitHub, and demo captions.",
+  "context": "The source result can be a DeepRacer LLM demo, an Isaac Sim setup test, or a Genesis rendering experiment.",
+  "constraints": [
+    "Outputs must be short enough to post quickly",
+    "Preserve technical credibility",
+    "Make the paid asset the logical next step"
+  ],
+  "artifact_path": "monetization/repurpose-sim-result.md",
+  "model": "fast"
+}
+

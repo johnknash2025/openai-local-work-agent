@@ -63,6 +63,10 @@ def cmd_workers():
     table.add_row("research", "リサーチメモ、比較、検証計画", "quality")
     table.add_row("writing", "記事草案、仕様書、提案書", "quality")
     table.add_row("ops", "runbook、手順書、運用チェックリスト", "quality")
+    table.add_row("idea", "売れるテーマ、企画、ネタ出し", "quality")
+    table.add_row("offer", "有料商品、価格仮説、販売導線", "quality")
+    table.add_row("repurpose", "1つの結果を複数媒体へ転用", "fast")
+    table.add_row("character", "AI VTuber、AI creator、人格設計", "quality")
     console.print(table)
 
 

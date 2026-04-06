@@ -1,0 +1,14 @@
+{
+  "type": "character",
+  "title": "Design a local AI VTuber business concept",
+  "objective": "Create a local-first AI VTuber or AI entertainer concept that can be run by a personal workstation or NVIDIA machine and monetized without waiting for a full SaaS product.",
+  "context": "The operator is exploring faster monetization paths than SaaS, including AI creator characters, technical entertainment, and stream-native content.",
+  "constraints": [
+    "Prefer a local stack with Ollama or other local models where realistic",
+    "Include monetization beyond ads, such as memberships, donations, paid prompts, clips, and sponsorship-ready positioning",
+    "Separate what can be automated now from what still needs manual operation"
+  ],
+  "artifact_path": "creator/design-local-ai-vtuber.md",
+  "model": "quality"
+}
+

@@ -1,0 +1,13 @@
+{
+  "type": "character",
+  "title": "Plan the first week of an AI creator launch",
+  "objective": "Produce a seven-day launch plan for an AI creator or AI VTuber that can be operated with local agents and minimal manual editing.",
+  "context": "The goal is to get to audience reaction and monetization signals quickly, without overbuilding infrastructure first.",
+  "constraints": [
+    "Include a daily content loop",
+    "Include what to post on X, YouTube or short-form video, and note/Substack",
+    "Focus on speed, evidence, and repeatability"
+  ],
+  "artifact_path": "creator/launch-ai-creator-week.md",
+  "model": "quality"
+}

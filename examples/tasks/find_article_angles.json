@@ -1,0 +1,15 @@
+{
+  "type": "idea",
+  "title": "Find sellable technical article angles",
+  "objective": "Generate article ideas that can be monetized quickly from local-only validation work around physical AI, Isaac Sim, Genesis, and robotics simulation.",
+  "context": "The operator wants near-term revenue. Ideas should prefer topics that can be validated on a Mac, local NVIDIA machine, or free cloud tiers.",
+  "constraints": [
+    "Separate free content from paid content",
+    "Prefer evidence-led article ideas",
+    "Avoid ideas that require enterprise-only infrastructure",
+    "Include at least one English-facing angle and one Japanese note angle"
+  ],
+  "artifact_path": "monetization/find-article-angles.md",
+  "model": "quality"
+}
+

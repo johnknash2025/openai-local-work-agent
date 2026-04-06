@@ -1,0 +1,126 @@
+html,
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  background: radial-gradient(circle at top, #1c2530, #0b0f13 60%);
+  color: #f2f4f6;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #8eb8ff;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 8px 0 10px;
+  font-size: clamp(2rem, 4vw, 4rem);
+}
+
+.tagline {
+  color: #c7d2dd;
+  max-width: 700px;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.topics span {
+  background: rgba(142, 184, 255, 0.15);
+  border: 1px solid rgba(142, 184, 255, 0.25);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.chat-panel {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.chat-log {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+  min-height: 50vh;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 18px;
+}
+
+.msg {
+  margin-bottom: 14px;
+  padding: 14px;
+  border-radius: 16px;
+}
+
+.msg.user {
+  background: rgba(142, 184, 255, 0.12);
+}
+
+.msg.assistant {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.role {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #96a5b4;
+  margin-bottom: 6px;
+}
+
+.chat-form {
+  display: grid;
+  gap: 12px;
+}
+
+.model-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+textarea,
+select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.07);
+  color: #f2f4f6;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+button {
+  justify-self: start;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #8eb8ff, #61e0b7);
+  color: #081018;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+

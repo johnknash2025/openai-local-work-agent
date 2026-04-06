@@ -27,6 +27,7 @@
   - `repurpose`
   - `character`
 - AI VTuber / AI creator planning is now a supported use case
+- Local AI creator chat UI added under `creator_runtime/` and `creator_ui/`
 
 ## Expected Model Setup
 
@@ -56,6 +57,7 @@ python main.py task examples/tasks/find_article_angles.json
 python main.py task examples/tasks/build_paid_note_offer.json
 python main.py task examples/tasks/repurpose_sim_result.json
 python main.py task examples/tasks/design_local_ai_vtuber.json
+python main.py creator-chat
 ```
 
 ## Next Useful Work
@@ -65,6 +67,7 @@ python main.py task examples/tasks/design_local_ai_vtuber.json
 3. Separate legacy content features into optional modules if the repo should become fully generic
 4. Add tests around task loading and artifact writing
 5. Add local pipelines for AI creator clips, prompt packs, and stream planning
+6. Add voice, avatar, and streaming integrations if the chat UI proves useful
 
 ## Constraints
 

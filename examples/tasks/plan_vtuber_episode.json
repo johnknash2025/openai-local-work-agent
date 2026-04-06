@@ -1,0 +1,13 @@
+{
+  "type": "character",
+  "title": "Plan a first AI VTuber episode",
+  "objective": "Design one talk-show style episode for a technical AI VTuber that mixes physical AI, local agents, and practical experiments.",
+  "context": "The persona is Lab VTuber, a local-first technical host aimed at builders who like robotics, simulation, and applied AI.",
+  "constraints": [
+    "Make the episode realistic for one operator",
+    "Include opening beat, main segment, audience interaction, and clip-worthy moments",
+    "Keep at least one monetization path in mind"
+  ],
+  "artifact_path": "creator/plan-vtuber-episode.md",
+  "model": "quality"
+}

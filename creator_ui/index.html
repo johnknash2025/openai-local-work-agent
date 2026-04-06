@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local AI Creator</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <p class="eyebrow">OpenAI Local Work Agent</p>
+        <h1 id="persona-name">Local AI Creator</h1>
+        <p id="persona-tagline" class="tagline"></p>
+        <div id="persona-topics" class="topics"></div>
+      </section>
+
+      <section class="chat-panel">
+        <div id="chat-log" class="chat-log"></div>
+        <form id="chat-form" class="chat-form">
+          <label class="model-row">
+            <span>Model</span>
+            <select id="model-select">
+              <option value="fast">fast</option>
+              <option value="quality">quality</option>
+            </select>
+          </label>
+          <textarea id="chat-input" rows="4" placeholder="Talk to the local AI creator..."></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+  </html>
+

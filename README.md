@@ -40,6 +40,7 @@ python main.py task examples/tasks/ops_local_agent_runbook.json
 python main.py task examples/tasks/find_article_angles.json
 python main.py task examples/tasks/build_paid_note_offer.json
 python main.py task examples/tasks/design_local_ai_vtuber.json
+python main.py creator-chat
 ```
 
 ## Generic Task Flow
@@ -94,6 +95,37 @@ python main.py drafts
 - `find_article_angles.json`
 - `build_paid_note_offer.json`
 - `repurpose_sim_result.json`
+
+## Local AI VTuber Starter
+
+いまは最小構成として、ローカル会話 UI まで入っています。
+
+起動:
+
+```bash
+cd ~/github/openai-local-work-agent
+source .venv/bin/activate
+python main.py creator-chat
+```
+
+ブラウザで次を開きます。
+
+- [http://127.0.0.1:8767](http://127.0.0.1:8767)
+
+含まれているもの:
+
+- `personas/lab_vtuber.json`
+- `creator_runtime/`
+- `creator_ui/`
+
+まだ入っていないもの:
+
+- 音声合成
+- Live2D / VRM 表示
+- 配信ソフト連携
+- 自動クリップ生成
+
+つまり今は `まずデスクトップで会話できる` 段階です。
 
 ## Directory Guide
 

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+db/agent.db
+config.yaml
+.env
+/tmp/
+.venv/
+runs/
+artifacts/
+reports/

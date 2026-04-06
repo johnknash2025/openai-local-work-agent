@@ -1,0 +1,2 @@
+,
+  { path: "~/local-content-agent", parent: "keigofukumoto", name: "local-content-agent", remote: "ssh://<internal-ip>/home/johnkhappy/github/local-content-agent", branch: "main", lastDate: "2026-03-19", lastMsg: "add .gitignore and config template (remove credentials)", dirty: 8, hasReadme: true, isOwn: false }

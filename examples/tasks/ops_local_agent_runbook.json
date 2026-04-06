@@ -1,0 +1,14 @@
+{
+  "type": "ops",
+  "title": "Local work agent runbook",
+  "objective": "Write a runbook for operating a local Gemma/Ollama-powered work agent on a Mac or Linux workstation.",
+  "context": "The runbook should help a single engineer boot, monitor, and recover the local agent stack.",
+  "constraints": [
+    "Prefer local-first operation",
+    "Do not assume cloud APIs",
+    "Include verification and recovery steps"
+  ],
+  "artifact_path": "ops/local-work-agent-runbook.md",
+  "model": "quality"
+}
+

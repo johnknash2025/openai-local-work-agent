@@ -1,0 +1,66 @@
+runtime:
+  repo_name: "openai-local-work-agent"
+  owner: "OpenAI-main"
+  default_output_dir: "artifacts"
+  runs_dir: "runs"
+
+ollama:
+  base_url: "http://localhost:11434"
+  model_fast: "gemma4:e2b"
+  model_quality: "gemma4:26b"
+  temperature: 0.4
+
+profiles:
+  default_worker: "writing"
+  local_work_agent:
+    description: "Generic local work agent for research, writing, and ops."
+    preferred_model: "quality"
+  monetization_content:
+    description: "Legacy content workflow kept for note/X/article drafting."
+    preferred_model: "quality"
+
+storage:
+  artifacts_dir: "artifacts"
+  runs_dir: "runs"
+  reports_dir: "reports"
+
+topics:
+  primary:
+    - physical AI
+    - robotics simulation
+    - agricultural robotics
+    - local GPU workflow
+  secondary:
+    - AI agents
+    - sim-to-real
+    - deployment runbooks
+    - engineering content systems
+
+author_profile: |
+  Japan-based engineer with California background.
+  Building local-first AI agent systems, robotics simulation workflows,
+  and operational runbooks that can be verified on personal hardware.
+
+note:
+  username: ""
+  email: ""
+  password: ""
+  base_url: "https://note.com"
+
+x:
+  username: ""
+  email: ""
+  password: ""
+
+content_calendar:
+  note_per_week: 1
+  x_per_day: 2
+  best_post_hours: [8, 12, 20]
+
+scheduler:
+  research_hour: 6
+  strategy_hour: 7
+  tweet_hour: 12
+  analytics_hour: 22
+  auto_post_x: false
+  auto_post_note: false

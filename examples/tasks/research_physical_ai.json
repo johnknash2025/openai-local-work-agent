@@ -1,0 +1,14 @@
+{
+  "type": "research",
+  "title": "Physical AI simulation scoping memo",
+  "objective": "Summarize what should be validated locally before publishing an engineering article about Isaac Sim and agricultural robotics.",
+  "context": "The repo is used as an OpenAI-main local work agent foundation. Outputs should be usable for article planning and engineering execution.",
+  "constraints": [
+    "Assume local-only validation on Mac and NVIDIA machines",
+    "Separate verified facts from open questions",
+    "Keep the memo practical and operator-friendly"
+  ],
+  "artifact_path": "research/physical-ai-scope.md",
+  "model": "quality"
+}
+

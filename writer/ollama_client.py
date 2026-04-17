@@ -12,6 +12,7 @@ DEFAULT_TEMPERATURE = CONFIG.get("ollama", {}).get("temperature", 0.7)
 
 
 def _resolve_model(model: str) -> str:
+    """Resolve model name with fallback to available models."""
     try:
         resp = httpx.get(f"{OLLAMA_URL}/api/tags", timeout=30)
         resp.raise_for_status()
@@ -22,14 +23,20 @@ def _resolve_model(model: str) -> str:
     if model in available:
         return model
 
-    quality_model = CONFIG.get("ollama", {}).get("model_quality")
-    if quality_model in available:
-        return quality_model
+    # Get all configured models in priority order
+    ollama_config = CONFIG.get("ollama", {})
+    priority_models = ollama_config.get("model_priority", [
+        ollama_config.get("model_experimental"),
+        ollama_config.get("model_quality"),
+        ollama_config.get("model_fast"),
+    ])
 
-    fast_model = CONFIG.get("ollama", {}).get("model_fast")
-    if fast_model in available:
-        return fast_model
+    # Try models in priority order
+    for fallback_model in priority_models:
+        if fallback_model and fallback_model in available:
+            return fallback_model
 
+    # Last resort: any available model
     return available[0] if available else model
 
 def chat(prompt: str, model: str, system: str = "", stream: bool = False) -> str:
